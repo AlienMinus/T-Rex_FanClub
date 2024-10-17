@@ -65,7 +65,7 @@ tr,
 th,
 td {
   font-size: larger;
-  border: 2px solid;
+  border: solid;
   border-color: black;
   padding: 10px;
   margin: 15px 0; /* Add margin around table */
