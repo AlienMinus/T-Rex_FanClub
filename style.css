@@ -1,0 +1,124 @@
+/* ImageRatingComponent.css */
+
+.content-rating {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.rating-buttons {
+  margin-top: 10px;
+}
+
+#like-button,
+#dislike-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#like-button:hover,
+#dislike-button:hover {
+  background-color: #2980b9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#reactInfo {
+  max-width: 400px;
+  text-align: justify;
+}
+
+.note1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  align-self: flex-start;
+  text-align: justify;
+  margin-bottom: 15px; /* Add space between paragraphs */
+}
+
+img {
+  border: 2%;
+  border-radius: 2%;
+  max-width: 100%; /* Ensure the image scales properly */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Added consistent shadow */
+}
+
+table,
+tr,
+th,
+td {
+  font-size: larger;
+  border: 2px solid;
+  border-color: black;
+  padding: 10px;
+  margin: 15px 0; /* Add margin around table */
+  width: 100%; /* Ensure the table spans the width of the container */
+}
+
+th {
+  background-color: rgb(0, 179, 255);
+}
+
+td {
+  background-color: rgb(138, 224, 232);
+}
+
+h1 {
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 48px;
+  background: linear-gradient(355deg, #f43b0c, #03e3f7);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px; /* Add space under the title */
+}
+
+h2 {
+  text-align: justify;
+  border: 2px solid;
+  background-color: rgb(131, 249, 210);
+  padding: 10px; /* Add padding to the h2 */
+  margin: 10px 0; /* Add margin around the h2 for spacing */
+}
+
+body {
+  background-color: rgb(221, 250, 237);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .content-rating {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  img {
+      width: 100%;
+  }
+
+  #like-button, 
+  #dislike-button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
