@@ -23,3 +23,13 @@ function updateTotalRatings() {
     // Updating the total ratings by adding like and dislike counts
     document.getElementById("total_ratings").textContent = likeCountValue + dislikeCountValue;
 }
+
+// Function to update the date and time every second
+function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = `It is ${now.toLocaleDateString()} and the time now is ${now.toLocaleTimeString()}.`;
+    document.getElementById("currentDateTime").textContent = dateTimeString;
+}
+
+// Calling the updateDateTime function every second
+setInterval(updateDateTime, 1000);
